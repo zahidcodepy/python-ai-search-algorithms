@@ -1,0 +1,10 @@
+# Python AI Search Algorithms
+#
+# All current algorithm implementations (BFS, DFS, A*) use only the
+# Python standard library (collections, heapq) — no external packages
+# are required to run anything in src/.
+#
+# This file is kept so `pip install -r requirements.txt` (as documented
+# in the README) works out of the box, and as a place to pin real
+# dependencies if future experiments need them (e.g. matplotlib for
+# visualizations, networkx for graph generation).
