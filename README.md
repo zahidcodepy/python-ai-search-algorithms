@@ -197,7 +197,15 @@ Through this repository, the following AI and software engineering concepts are 
 
 ## Screenshots
 
-> Execution screenshots will be added here as experiments are completed.
+**Graph Traversal Diagrams**
+
+<div align="center">
+<img src="images/bfs-graph-diagram.svg" alt="BFS Graph Traversal Diagram" width="80%"/>
+<br/><br/>
+<img src="images/dfs-graph-diagram.svg" alt="DFS Graph Traversal Diagram" width="80%"/>
+</div>
+
+**Execution Output**
 
 <div align="center">
 <img src="images/bfs-execution.png" alt="BFS Execution Output" width="80%"/>
