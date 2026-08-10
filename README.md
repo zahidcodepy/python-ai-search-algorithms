@@ -195,13 +195,6 @@ Through this repository, the following AI and software engineering concepts are 
 
 ---
 
-## Screenshots
-
-<div align="center">
-<img src="images/bfs-graph-diagram.svg" alt="BFS Graph Traversal" width="80%"/>
-<br/><br/>
-<img src="images/dfs-graph-diagram.svg" alt="DFS Graph Traversal" width="80%"/>
-</div>
 
 ## Roadmap
 
