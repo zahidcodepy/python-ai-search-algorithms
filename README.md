@@ -69,7 +69,7 @@ The goal is simple: make AI search algorithms easy to read, easy to run, and eas
 | 02 | Depth First Search (DFS) | Explores as deep as possible along each branch before backtracking | ✅ Done |
 | 03 | A* Search | Informed search using path cost and heuristic estimation | ✅ Done |
 | 04 | Best First Search | Greedy informed search guided purely by heuristic value | ✅ Done |
-| 05 | Uniform Cost Search | Expands the lowest cumulative path-cost node first | 🔜 Planned |
+| 05 | Uniform Cost Search | Expands the lowest cumulative path-cost node first | ✅ Done |
 | 06 | Hill Climbing | Local search that moves toward increasing heuristic value | 🔜 Planned |
 | 07 | AO* | Search over AND-OR graphs for problem decomposition | 🔜 Planned |
 | 08 | Minimax | Decision-making algorithm for two-player adversarial games | 🔜 Planned |
@@ -153,6 +153,9 @@ python src/astar.py
 
 # Run Best First Search
 python src/best_first_search.py
+
+# Run Uniform Cost Search
+python src/uniform_cost_search.py
 ```
 
 > Each script prints the search process and final path/output directly to the console.
@@ -182,6 +185,7 @@ Every new algorithm added to `src/` should be paired with a corresponding page i
 | Depth First Search (DFS) | O(V + E) | O(V) |
 | A* Search | O(E) — depends on heuristic | O(V) |
 | Best First Search | O((V + E) log V) — heap-based | O(V) |
+| Uniform Cost Search | O((V + E) log V) — heap-based | O(V) |
 
 *V = number of vertices/nodes, E = number of edges.*
 
@@ -206,7 +210,7 @@ Through this repository, the following AI and software engineering concepts are 
 - [x] Depth First Search (DFS)
 - [x] A* Search
 - [x] Best First Search
-- [ ] Uniform Cost Search
+- [x] Uniform Cost Search
 - [ ] Hill Climbing
 - [ ] AO*
 - [ ] Minimax
