@@ -70,7 +70,7 @@ The goal is simple: make AI search algorithms easy to read, easy to run, and eas
 | 03 | A* Search | Informed search using path cost and heuristic estimation | ✅ Done |
 | 04 | Best First Search | Greedy informed search guided purely by heuristic value | ✅ Done |
 | 05 | Uniform Cost Search | Expands the lowest cumulative path-cost node first | ✅ Done |
-| 06 | Hill Climbing | Local search that moves toward increasing heuristic value | 🔜 Planned |
+| 06 | Hill Climbing | Local search that moves toward increasing heuristic value | ✅ Done |
 | 07 | AO* | Search over AND-OR graphs for problem decomposition | 🔜 Planned |
 | 08 | Minimax | Decision-making algorithm for two-player adversarial games | 🔜 Planned |
 | 09 | Alpha-Beta Pruning | Optimized Minimax with branch elimination | 🔜 Planned |
@@ -156,6 +156,9 @@ python src/best_first_search.py
 
 # Run Uniform Cost Search
 python src/uniform_cost_search.py
+
+# Run Hill Climbing
+python src/hill_climbing.py
 ```
 
 > Each script prints the search process and final path/output directly to the console.
@@ -186,6 +189,7 @@ Every new algorithm added to `src/` should be paired with a corresponding page i
 | A* Search | O(E) — depends on heuristic | O(V) |
 | Best First Search | O((V + E) log V) — heap-based | O(V) |
 | Uniform Cost Search | O((V + E) log V) — heap-based | O(V) |
+| Hill Climbing | O(V + E) | O(1) |
 
 *V = number of vertices/nodes, E = number of edges.*
 
@@ -211,7 +215,7 @@ Through this repository, the following AI and software engineering concepts are 
 - [x] A* Search
 - [x] Best First Search
 - [x] Uniform Cost Search
-- [ ] Hill Climbing
+- [x] Hill Climbing
 - [ ] AO*
 - [ ] Minimax
 - [ ] Alpha-Beta Pruning
