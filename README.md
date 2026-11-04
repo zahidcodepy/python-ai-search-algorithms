@@ -71,7 +71,7 @@ The goal is simple: make AI search algorithms easy to read, easy to run, and eas
 | 04 | Best First Search | Greedy informed search guided purely by heuristic value | ✅ Done |
 | 05 | Uniform Cost Search | Expands the lowest cumulative path-cost node first | ✅ Done |
 | 06 | Hill Climbing | Local search that moves toward increasing heuristic value | ✅ Done |
-| 07 | AO* | Search over AND-OR graphs for problem decomposition | 🔜 Planned |
+| 07 | AO* | Search over AND-OR graphs for problem decomposition | ✅ Done |
 | 08 | Minimax | Decision-making algorithm for two-player adversarial games | 🔜 Planned |
 | 09 | Alpha-Beta Pruning | Optimized Minimax with branch elimination | 🔜 Planned |
 | 10 | Genetic Algorithm | Evolutionary search inspired by natural selection | 🔜 Planned |
@@ -159,6 +159,9 @@ python src/uniform_cost_search.py
 
 # Run Hill Climbing
 python src/hill_climbing.py
+
+# Run AO* Search
+python src/ao_star.py
 ```
 
 > Each script prints the search process and final path/output directly to the console.
@@ -190,6 +193,7 @@ Every new algorithm added to `src/` should be paired with a corresponding page i
 | Best First Search | O((V + E) log V) — heap-based | O(V) |
 | Uniform Cost Search | O((V + E) log V) — heap-based | O(V) |
 | Hill Climbing | O(V + E) | O(1) |
+| AO* Search | Depends on graph and heuristic | O(V) |
 
 *V = number of vertices/nodes, E = number of edges.*
 
@@ -216,7 +220,7 @@ Through this repository, the following AI and software engineering concepts are 
 - [x] Best First Search
 - [x] Uniform Cost Search
 - [x] Hill Climbing
-- [ ] AO*
+- [x] AO*
 - [ ] Minimax
 - [ ] Alpha-Beta Pruning
 - [ ] Genetic Algorithm
